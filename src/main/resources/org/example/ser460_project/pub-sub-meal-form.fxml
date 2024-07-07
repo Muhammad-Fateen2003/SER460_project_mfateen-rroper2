@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ser460_project.Controller">
+   <children>
+      <Label layoutX="69.0" layoutY="14.0" text="Nutritionist/Dietitian" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="313.0" orientation="VERTICAL" prefHeight="283.0" prefWidth="6.0" />
+      <Label layoutX="35.0" layoutY="52.0" text="username:" />
+      <Label layoutX="29.0" layoutY="78.0" text="cuisine type:" />
+      <Label layoutX="31.0" layoutY="111.0" text="meal name:" />
+      <Label layoutX="29.0" layoutY="172.0" text="time of meal:" />
+      <Label layoutX="32.0" layoutY="202.0" text="day of meal:" />
+      <TextField fx:id="usernameField" layoutX="109.0" layoutY="48.0" prefHeight="25.0" prefWidth="190.0" />
+      <TextField fx:id="cuisineTypeField" layoutX="109.0" layoutY="76.0" prefHeight="25.0" prefWidth="190.0" />
+      <TextField fx:id="mealNameField" layoutX="109.0" layoutY="105.0" prefHeight="25.0" prefWidth="190.0" />
+      <ComboBox fx:id="timeOfMealField" layoutX="111.0" layoutY="168.0" prefHeight="25.0" prefWidth="190.0" />
+      <ComboBox fx:id="dayOfMealField" layoutX="111.0" layoutY="198.0" prefHeight="25.0" prefWidth="190.0" />
+      <Button layoutX="246.0" layoutY="232.0" mnemonicParsing="false" onAction="#publishButtonAction" text="publish" />
+      <Label layoutX="415.0" layoutY="14.0" text="Customer" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="52.0" text="username:" />
+      <Label layoutX="320.0" layoutY="77.0" prefHeight="42.0" prefWidth="82.0" text="cuisine type of interest:" wrapText="true" />
+      <TextField fx:id="subscriberUsernameField" layoutX="410.0" layoutY="48.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="cuisineTypeInterestField" layoutX="410.0" layoutY="86.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="320.0" layoutY="127.0" prefHeight="25.0" prefWidth="36.0" text="Daily" />
+      <CheckBox fx:id="dailyField" layoutX="415.0" layoutY="131.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="6.0" />
+      <Label layoutX="320.0" layoutY="157.0" prefHeight="25.0" prefWidth="47.0" text="Weekly" />
+      <CheckBox fx:id="weeklyField" layoutX="415.0" layoutY="161.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="6.0" />
+      <Button fx:id="subscribeButton" layoutX="471.0" layoutY="200.0" mnemonicParsing="false" onAction="#subscribeButtonAction" text="subscribe/unsubscribe" />
+      <Label layoutX="7.0" layoutY="140.0" text="cook time (min):" />
+      <Spinner fx:id="cookTimeSpinner" layoutX="109.0" layoutY="136.0" prefHeight="25.0" prefWidth="190.0" />
+      <TextArea fx:id="logTextArea" layoutX="-2.0" layoutY="285.0" prefHeight="247.0" prefWidth="625.0" />
+   </children>
+</AnchorPane>
